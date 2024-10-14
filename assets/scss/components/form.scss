@@ -1,0 +1,172 @@
+@import "../common/utils";
+
+// form
+.groupFields {
+	display: flex;
+	grid-gap: 20px;
+	width: 100%;
+
+	@include max($mobile-max) {
+		flex-direction: column;
+		grid-gap: 0;
+	}
+}
+
+.itemField {
+	width: 100%;
+	margin-bottom: toRem(20px);
+
+	label {
+		display: block;
+		font-size: 5px 15px(16);
+		font-weight: bold;
+		margin-bottom: toRem(10px);
+	}
+}
+
+.controle-field,
+.boxSelect select {
+	padding: toRem(5px) toRem(15px);
+}
+
+.controle-field,
+.boxSelect {
+	display: block;
+	width: 100%;
+	background: var(--white);
+	border: 1px solid #ccc;
+}
+
+.controle-field:not(textarea),
+.boxSelect {
+	height: toRem(40px);
+}
+
+.boxcheck {
+	[type="checkbox"] {
+		padding: 0;
+		height: initial;
+		width: initial;
+		margin-bottom: 0;
+		display: none;
+		cursor: pointer;
+
+		&+label {
+			display: inline-block;
+			position: relative;
+			font-weight: 400;
+			cursor: pointer;
+			font-size: toRem(16px);
+
+			&::before {
+				content: '';
+				-webkit-appearance: none;
+				background-color: transparent;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				position: relative;
+				vertical-align: middle;
+				cursor: pointer;
+				margin-right: toRem(10px);
+			}
+		}
+
+		&:checked+label::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 1.7px;
+			left: 5px;
+			width: 5px;
+			height: 9px;
+			border: solid 1px var(--color-primary);
+			border-width: 0 2px 2px 0;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.boxradio {
+	[type="radio"] {
+		padding: 0;
+		height: initial;
+		width: initial;
+		margin-bottom: 0;
+		display: none;
+		cursor: pointer;
+
+		&+label {
+			display: inline-block;
+			position: relative;
+			cursor: pointer;
+			font-size: toRem(16px);
+			font-weight: 400;
+
+			&::before {
+				content: '';
+				-webkit-appearance: none;
+				background-color: transparent;
+				border: 1px solid #ccc;
+				border-radius: 10px;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				position: relative;
+				vertical-align: middle;
+				cursor: pointer;
+				margin-right: toRem(5px);
+			}
+		}
+
+		&:checked+label::after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 6px;
+			left: 5px;
+			width: 6px;
+			height: 6px;
+			background: var(--color-primary);
+			border-radius: 50%;
+		}
+	}
+}
+
+.boxSelect {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+
+	select {
+		appearance: none;
+		outline: 0;
+		border: 0;
+		box-shadow: none;
+		background-image: none;
+		flex: 1;
+		padding-right: 40px;
+		cursor: pointer;
+
+		&::-ms-expand {
+			display: none;
+		}
+	}
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 1px;
+		height: 1px;
+		border-width: 6px 5px;
+		border-style: solid;
+		border-color: #000 transparent transparent transparent;
+		pointer-events: none;
+	}
+}

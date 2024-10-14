@@ -1,0 +1,117 @@
+.home_sect_5 {
+    margin-bottom: toRem(64px);
+    background-color: var(--white);
+
+    @include max($min-tablet-portrait-max) {
+        margin-bottom: toRem(61px);
+    }
+
+    @include max($mobile-max) {
+        margin-bottom: toRem(32px);
+    }
+
+    .community_wrapper {
+        padding: toRem(68px);
+        border: 1px solid var(--footer-border-color);
+        box-shadow: 0px 4px 8px 0px #866AFA66;
+        border-radius: toRem(24px);
+        gap: toRem(32px);
+
+        @include max($min-tablet-portrait-max) {
+            padding: toRem(48px);
+        }
+
+        @include max($mobile-max) {
+            flex-direction: column;
+            padding: toRem(24px);
+        }
+    }
+
+    .community_content_left {
+        width: toRem(325px);
+        height: toRem(282px);
+        border-radius: toRem(15px);
+        overflow: hidden;
+
+        @include max($min-tablet-portrait-max) {
+            width: 50%;
+        }
+
+        @include max($mobile-max) {
+            width: 100%;
+        }
+    }
+
+
+    .community_content_right {
+        max-width: toRem(1147px);
+
+        @include max($min-tablet-portrait-max) {
+            width: 50%;
+        }
+
+        @include max($mobile-max) {
+            width: 100%;
+        }
+
+        .paragraph {
+            color: var(--black);
+        }
+
+        .community_buttons {
+            .input_email {
+                width: toRem(317px);
+                height: toRem(44px);
+                border: 0;
+                border-radius: toRem(8px);
+                outline: none;
+                background: var(--color-secondary);
+                padding: toRem(10px) 0;
+                padding-left: toRem(12px);
+                padding-right: toRem(12px);
+                font-size: toRem(16px);
+                font-weight: 400;
+                line-height: toRem(24px);
+                color: var(--color-text);
+
+                &::placeholder {
+                    color: var(--input-placeholder);
+                }
+
+                @include max($min-tablet-portrait-max) {
+                    width: 100%;
+                }
+            }
+
+            .btn {
+                padding: toRem(9px) toRem(24px);
+
+                @include max($min-tablet-portrait-max) {
+                    width: 100%;
+                }
+
+                &.br-8 {
+                    border-radius: toRem(8px);
+                }
+
+                &.ml-10 {
+                    margin-left: toRem(-10px);
+                }
+
+                @include max($min-tablet-portrait-max) {
+                    width: 100%;
+
+                    &.ml-10 {
+                        margin-left: toRem(0px);
+                    }
+                }
+            }
+
+            @include max($min-tablet-portrait-max) {
+                flex-direction: column;
+                gap: toRem(12px);
+            }
+
+        }
+    }
+}

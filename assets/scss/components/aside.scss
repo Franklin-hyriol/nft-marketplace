@@ -1,0 +1,39 @@
+@import "../common/utils";
+
+.aside {
+	width: toRem(300px);
+	min-height: 100vh;
+	background: #333;
+	color: var(--white) !important;
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	* {
+		color: var(--white) !important;
+	}
+
+	.container {
+		padding: toRem(40px) toRem(20px);
+	}
+
+	nav {
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: toRem(10px);
+		}
+
+		li {
+			position: relative;
+			padding-left: toRem(20px);
+
+			&::before {
+				content: "\00bb";
+				position: absolute;
+				left: 0;
+				top: rem(-2);
+			}
+		}
+	}
+}

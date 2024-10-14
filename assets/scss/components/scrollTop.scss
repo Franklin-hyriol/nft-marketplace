@@ -1,0 +1,42 @@
+#progress {
+	z-index: 111;
+	position: fixed;
+	bottom: toRem(50px);
+	right: toRem(27px);
+	height: toRem(52px);
+	width: toRem(52px);
+	display: none;
+	place-items: center;
+	border-radius: 50%;
+	box-shadow: 0 0 toRem(10px) rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+
+	i {
+		background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAOCAYAAAA1+Nx+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD+SURBVHgBpZI9EsFQEMd3szNhRnS+SqXRcARukFJJp6R0C60KR3ACjhCF1HRBo5CGYW2YzMRHeC/+RTLZbH6/t3kPQTHpUqVMbPQAsQYX7vt711H5DlWaArgBNJfm8r3AcIArN1UkPwVv8DCKEkoEfywtLb+rZWYL3vm4X2oLvsKjEgDbtArrOAlpwqcIOJN746UeKyEduO+t2qfjbpGyiqgqIR14+KAjIV24roSSwKMS08pvZLftOAkmhUeTKVWlD8cfXrVJxhzi+5jK8CCyUufjJAwNg+EK/8DD+J47EWLnqYh8ILJyjpxtG1muwCN/63YhYcJJGKAe8AQ4uAFfMpQYTkyH8AAAAABJRU5ErkJggg==') no-repeat center;
+		display: block;
+		height: 100%;
+		width: 100%;
+		background-size: toRem(20px);
+	}
+
+	@media screen and (max-width: 992px) {
+		bottom: toRem(94px);
+		right: toRem(25px);
+	}
+}
+
+#progress-value {
+	display: block;
+	height: calc(110% - toRem(12px));
+	width: calc(110% - toRem(12px));
+	background-color: var(--white);
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	font-size: toRem(35px);
+	color: var(--color-primary);
+}
+
+span#progress-value i {
+	font-size: toRem(15px);
+}

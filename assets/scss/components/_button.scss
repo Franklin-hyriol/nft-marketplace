@@ -1,0 +1,74 @@
+@import "../common/utils";
+
+/*bouton*/
+.btn {
+	padding: toRem(10px) toRem(24px);
+	display: inline-block;
+	text-decoration: none;
+	border-radius: toRem(24px);
+	font-size: toRem(16px);
+	line-height: toRem(24px);
+	font-family: var(--font-primary);
+	@include animation-all();
+	text-align: center;
+	cursor: pointer;
+	white-space: nowrap;
+	width: fit-content;
+
+	@include max($mobile-max) {
+		font-size: toRem(12px);
+	}
+
+	&.btn-with-icon {
+		display: inline-flex;
+		align-items: center;
+		gap: toRem(14px);
+	}
+
+	&.btn-primary {
+		border: 1px solid var(--btn-primary-border-color);
+		background: var(--btn-primary-bg-color);
+		color: var(--btn-primary-color);
+
+		&:hover {
+			background: var(--btn-primary-bg-color-hover);
+			border-color: var(--btn-primary-border-color-hover);
+			color: var(--btn-primary-color-hover);
+		}
+	}
+
+	&.btn-secondary {
+		background: var(--btn-secondary-bg-color);
+		border: 1px solid var(--btn-secondary-border-color);
+		color: var(--btn-secondary-color);
+
+		&:hover {
+			background: var(--btn-secondary-bg-color-hover);
+			border-color: var(--btn-secondary-border-color-hover);
+			color: var(--btn-secondary-color-hover);
+			box-shadow: 0px 4px 8px 0px var(--btn-secondary-color-hover-box-shadow);
+		}
+	}
+
+	&.btn-outline-primary,
+	&.btn-outline-secondary {
+		color: var(--color-text);
+		background: transparent;
+	}
+
+	&.btn-outline {
+		background: var(--btn-outline-bg-color);
+		border-color: var(--btn-outline-border-color);
+		color: var(--btn-outline-color);
+
+		&:hover {
+			background: var(--btn-outline-bg-color-hover);
+			border-color: var(--btn-outline-border-color-hover);
+			color: var(--btn-outline-color-hover);
+		}
+	}
+
+	@include max($mobile-max) {
+		width: 100%;
+	}
+}

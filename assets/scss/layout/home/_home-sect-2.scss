@@ -1,0 +1,61 @@
+@import "../../plugins/slick";
+
+.home_sect_2 {
+
+    margin-bottom: toRem(64px);
+
+    @include max(660px) {
+        margin-bottom: toRem(45px);
+    }
+
+    .top_title {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: toRem(12px);
+
+        .title_h2 {
+            margin-bottom: 0;
+        }
+
+        .slick_arrow_container {
+            gap: toRem(12px);
+        }
+
+        .see_all {
+            display: none;
+
+            @include max(660px) {
+                display: block;
+            }
+        }
+
+        .slick_arrow {
+            width: toRem(24px);
+            height: toRem(28px);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color-primary);
+            background: transparent;
+            border: 0;
+            cursor: pointer;
+            transition: var(--transition);
+            font-size: toRem(14px);
+
+            @include max(660px) {
+                display: none !important;
+            }
+        }
+    }
+
+    @include max(660px) {
+        .slick-slide {
+            text-align: center;
+        }
+    }
+
+
+    .slick_dots_container {
+        margin-top: toRem(8px);
+    }
+}

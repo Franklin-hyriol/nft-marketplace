@@ -1,0 +1,104 @@
+@import "../common/utils";
+
+
+.d-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+// position
+.text-align-center {
+	text-align: center;
+}
+
+.align-items-center {
+	align-items: center;
+}
+
+.justify-space-between {
+	justify-content: space-between;
+}
+
+//margin bottom
+.mb-1 {
+	margin-bottom: toRem(100px);
+}
+
+.mb-2 {
+	margin-bottom: toRem(75px);
+}
+
+.mb-3 {
+	margin-bottom: toRem(50px);
+}
+
+.mb-4 {
+	margin-bottom: toRem(30px);
+}
+
+.mb-5 {
+	margin-bottom: toRem(15px);
+}
+
+//margin top
+.mt-1 {
+	margin-top: toRem(100px);
+}
+
+.mt-2 {
+	margin-top: toRem(75px);
+}
+
+.mt-3 {
+	margin-top: toRem(50px);
+}
+
+.mt-4 {
+	margin-top: toRem(30px);
+}
+
+.mt-5 {
+	margin-top: toRem(15px);
+}
+
+//padding left
+.ml-1 {
+	margin-left: toRem(100px);
+}
+
+.ml-2 {
+	margin-left: toRem(75px);
+}
+
+.ml-3 {
+	margin-left: toRem(50px);
+}
+
+.ml-4 {
+	margin-left: toRem(30px);
+}
+
+.ml-5 {
+	margin-left: toRem(15px);
+}
+
+//margin right
+.mr-1 {
+	margin-right: toRem(100px);
+}
+
+.mr-2 {
+	margin-right: toRem(75px);
+}
+
+.mr-3 {
+	margin-right: toRem(50px);
+}
+
+.mr-4 {
+	margin-right: toRem(30px);
+}
+
+.mr-5 {
+	margin-right: toRem(15px);
+}

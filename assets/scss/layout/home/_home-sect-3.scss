@@ -1,0 +1,24 @@
+.home_sect_3 {
+    margin-bottom: toRem(64px);
+
+    @include max($mobile-max) {
+        margin-bottom: toRem(24px);
+    }
+
+    .title_h2 {
+        color: var(--black);
+    }
+
+    .card_wrapper {
+        gap: toRem(15px);
+        flex-wrap: wrap;
+        counter-reset: my-awesome-counter;
+
+        @include max($mobile-max) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+        }
+    }
+
+}

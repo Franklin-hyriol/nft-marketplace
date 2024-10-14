@@ -1,0 +1,82 @@
+@import "../common/utils";
+
+/*Table*/
+
+table {
+	&.custom-table {
+		width: 100%;
+		border-collapse: collapse;
+		color: var(--table-text-color);
+		border: 1px solid var(--table-border-color);
+
+		th,
+		td {
+			padding: var(--table-cell-padding);
+			border: 1px solid var(--table-border-color);
+			text-align: left;
+		}
+
+		th {
+			background-color: var(--table-head-bg-color);
+			color: var(--table-head-text-color);
+		}
+
+		td {
+			color: var(--table-body-text-color);
+		}
+
+		tr:nth-child(even) {
+			background-color: var(--table-secondary-row-bg-color);
+		}
+	}
+
+}
+
+@include max($tablet-portrait-min) {
+	table {
+		&.custom-table {
+
+
+			thead,
+			tbody,
+			th,
+			td,
+			tr {
+				display: block;
+			}
+
+			thead {
+				display: none;
+				/* Hide table headers */
+			}
+
+			tr {
+				margin-bottom: 15px;
+			}
+
+			td {
+				position: relative;
+				padding-left: 50%;
+				text-align: right;
+				border: none;
+				border-bottom: 1px solid var(--table-border-color);
+			}
+
+			td::before {
+				content: attr(data-label);
+				position: absolute;
+				left: 10px;
+				padding-right: 10px;
+				white-space: nowrap;
+				text-align: left;
+				font-weight: bold;
+				color: var(--table-body-text-color);
+			}
+
+			td:last-child {
+				border-bottom: 0;
+			}
+		}
+	}
+
+}

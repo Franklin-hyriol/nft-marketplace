@@ -1,0 +1,73 @@
+:root {
+
+	--color-primary: #6F4FF2;
+	--color-primary-variant: #B6A5FE;
+	--color-secondary: #F1F1F2;
+	--color-text: #0C0C0C;
+	--white: #ffffff;
+	--black: #000000;
+	--notification-indicator: #E01E1E;
+	--profile-border-color: #29E072;
+
+	--input-placeholder: #717171;
+	--transition: all 0.25s ease-in-out;
+
+
+	// footer
+	--footer-bg-color: #202020;
+	--footer-border-color: #D3D4D6;
+	--footer-titre-color: #866AFA;
+
+
+	/*----------------------global---------------------*/
+	//bouton primary
+	--btn-primary-bg-color: #6146E5;
+	--btn-primary-border-color: #6146E5;
+	--btn-primary-color: #ffffff;
+
+
+	//bouton primary hover
+	--btn-primary-bg-color-hover: #6F4FF2;
+	--btn-primary-border-color-hover: #6F4FF2;
+	--btn-primary-color-hover: #ffffff;
+
+	//bouton secondary
+	--btn-secondary-bg-color: transparent;
+	--btn-secondary-border-color: #ffffff;
+	--btn-secondary-color: #ffffff;
+
+
+	//bouton secondary hover
+	--btn-secondary-bg-color-hover: transparent;
+	--btn-secondary-border-color-hover: #ffffff;
+	--btn-secondary-color-hover: #ffffff;
+	--btn-secondary-color-hover-box-shadow: #6F4FF2CC;
+
+
+	//bouton outline
+	--btn-outline-bg-color: #fff;
+	--btn-outline-border-color: #311d64;
+	--btn-outline-color: #311d64;
+	//bouton outline hover
+	--btn-outline-bg-color-hover: #311d64;
+	--btn-outline-border-color-hover: #311d64;
+	--btn-outline-color-hover: #fff;
+
+
+
+
+	/*----------------------TABLE---------------------*/
+	--table-border-color: #1b1b1b;
+	--table-head-bg-color: #311d64;
+	--table-text-color: #fff;
+	--table-head-text-color: #fff;
+	--table-body-text-color: #333;
+	--table-cell-padding: 10px;
+	--table-secondary-row-bg-color: #f0f0f0;
+
+	//font 
+	--font-primary: "Inter", sans-serif;
+
+	//card
+	--bg-card: #fff
+}

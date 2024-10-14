@@ -1,0 +1,68 @@
+.card_simple {
+    width: toRem(221.43px);
+    padding: toRem(16px) toRem(12px);
+    border-radius: toRem(15px);
+    border: 1px solid var(--footer-border-color);
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: toRem(8px);
+    text-align: center;
+    counter-increment: my-awesome-counter;
+
+    @include max($mobile-max) {
+        width: 100%;
+    }
+
+
+    &::before {
+        content: counter(my-awesome-counter);
+        position: absolute;
+        top: toRem(-12px);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: toRem(24px);
+        height: toRem(24px);
+        border-radius: 50%;
+        background-color: var(--color-primary-variant);
+        font-size: torem(12px);
+        color: var(--white);
+
+    }
+
+    &_img {
+        width: toRem(62px);
+        height: toRem(62px);
+        border: 2px solid var(--profile-border-color);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &_details {
+        .title_h4 {
+            color: var(--black);
+            margin-bottom: 0;
+        }
+    }
+
+
+    &_name,
+    &_items {
+        display: block;
+        font-size: toRem(12px);
+        line-height: toRem(13.2px);
+        padding: toRem(4px) 0;
+    }
+
+
+    &_name {
+
+        color: var(--color-text);
+    }
+
+    &_items {
+        color: var(--color-primary);
+    }
+}

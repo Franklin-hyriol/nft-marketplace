@@ -1,0 +1,218 @@
+.home_sect_1 {
+    position: relative;
+    margin-bottom: toRem(64px);
+
+    @include max($mobile-max) {
+        margin-bottom: toRem(24px);
+    }
+
+
+    .banner_wrapper {
+        min-height: 533px;
+        border-radius: toRem(24px);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 0 toRem(48px);
+        align-items: center;
+        gap: toRem(44px);
+        position: relative;
+
+        @include max($mobile-max) {
+            display: grid !important;
+            grid-template-columns: 1.5fr 0.5fr;
+            min-height: 367px;
+            align-items: start;
+            padding: toRem(12px) toRem(32px);
+            margin-bottom: toRem(12px);
+        }
+
+
+        .banner_left {
+            flex-basis: 56.47%;
+
+            @include max($min-tablet-portrait-max) {
+                flex-basis: 100%;
+            }
+
+            .paragraph {
+                max-width: toRem(533px);
+            }
+
+            .banner_left_buttons {
+                align-items: center;
+                gap: toRem(24px);
+
+                @include max($mobile-max) {
+                    display: none;
+                }
+            }
+        }
+
+
+
+        .banner_right {
+            flex-basis: 43.53%;
+            flex-direction: column;
+            gap: 128px;
+            align-items: center;
+
+            @include max($min-tablet-portrait-max) {
+                flex-basis: 0%;
+            }
+
+            .banner_right_kpi {
+                width: toRem(161px);
+                height: toRem(161px);
+                justify-content: center;
+                gap: toRem(4px);
+                flex-direction: column;
+                border-radius: toRem(15px);
+                background: #67696F80;
+                backdrop-filter: blur(6px);
+                align-items: center;
+
+                @include max($min-tablet-portrait-max) {
+                    position: absolute;
+                    right: toRem(51px);
+                    bottom: toRem(31px);
+                }
+
+                @include max($mobile-max) {
+                    top: toRem(9px);
+                    right: toRem(18px);
+                    bottom: auto;
+                    width: toRem(92px);
+                }
+
+
+                .kpi_graph {
+                    width: toRem(48px);
+                    height: toRem(48px);
+
+                    img {
+                        object-fit: contain;
+                    }
+                }
+
+                .kpi_title,
+                .kpi_text {
+                    color: var(--white);
+                }
+
+                .kpi_title {
+                    font-size: toRem(28px);
+                    font-weight: 700;
+                    line-height: toRem(42px);
+
+                    @include max($mobile-max) {
+                        font-size: toRem(21px);
+                        line-height: toRem(33.6px);
+                    }
+                }
+
+                .kpi_text {
+                    font-size: toRem(16px);
+                    line-height: toRem(24px);
+
+                    @include max($mobile-max) {
+                        font-size: toRem(12px);
+                        line-height: toRem(13px);
+                    }
+                }
+            }
+
+            .banner_right_activeUser {
+                gap: toRem(40px);
+                padding: toRem(23px) toRem(24px);
+                border-radius: toRem(50px);
+                background: #67696F80;
+                backdrop-filter: blur(6px);
+                align-items: center;
+                align-self: flex-start;
+
+                @include max($min-tablet-portrait-max) {
+                    position: absolute;
+                    left: toRem(74px);
+                    bottom: toRem(-45px);
+                }
+
+                @include max($mobile-max) {
+                    left: toRem(32px);
+                    bottom: toRem(12px);
+                    padding: toRem(12.5px) toRem(19px);
+                }
+
+                .activeUser_images picture {
+                    width: toRem(44px);
+                    height: toRem(44px);
+                    border-radius: 50%;
+                    overflow: hidden;
+                    border: 1px solid var(--profile-border-color);
+
+                    @include max($mobile-max) {
+                        width: toRem(32px);
+                        height: toRem(32px);
+                    }
+
+
+                    &:not(:first-child) {
+                        margin-left: toRem(-15px);
+                    }
+                }
+
+                .activeUser_details {
+                    flex-direction: column;
+                    gap: toRem(4px);
+                    text-align: center;
+
+                    .activeUser_number,
+                    .activeUser_text {
+                        color: var(--white);
+                    }
+
+                    .activeUser_number {
+                        font-size: toRem(28px);
+                        font-weight: 700;
+                        line-height: toRem(42px);
+
+                        @include max($mobile-max) {
+                            font-size: toRem(21px);
+                            line-height: toRem(33.6px);
+                        }
+                    }
+
+                    .activeUser_text {
+                        font-size: toRem(16px);
+                        line-height: toRem(24px);
+
+                        @include max($mobile-max) {
+                            font-size: toRem(12px);
+                            line-height: toRem(13px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .banner_left_buttons.d-mobile {
+        justify-content: space-between;
+        gap: toRem(12px);
+        display: none;
+
+        @include max($mobile-max) {
+            display: flex;
+        }
+
+
+        .btn {
+            width: fit-content;
+        }
+
+        .btn-secondary {
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+        }
+    }
+}
