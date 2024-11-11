@@ -1,1203 +1,1241 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="dist/images/nft_logo.svg" type="image/svg+xml" />
-		<title>NFT logoplace</title>
-		<meta name="description" content="Buy and sell logos as NFTs on this platform. Unique digital assets for your business." />
 
-		<link rel="stylesheet" href="dist/css/page/home.min.css" />
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="dist/images/nft_logo.svg" type="image/svg+xml">
+	<title>NFT logoplace</title>
+	<meta name="description"
+		content="Buy and sell logos as NFTs on this platform. Unique digital assets for your business.">
 
-	<body>
-		<header class="header">
+	<link rel="stylesheet" href="dist/css/page/home.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header_wrapper d-flex align-items-center">
+				<div class="header_left d-flex align-items-center">
+					<a href="/" class="header_left_logo d-flex" aria-label="Go to homepage">
+						<picture>
+							<img src="dist/images/nft_logo.svg" alt="Logo logoplace">
+						</picture>
+						<span class="header_left_logo_title">NFT logoplace</span>
+					</a>
+
+					<div class="header_left_search">
+						<input class="search_input" type="text" name="search" id="search" placeholder="search">
+						<span class="icon_search icon-search"></span>
+					</div>
+				</div>
+
+				<div class="header_right d-flex align-items-center">
+					<nav class="header_right_menu">
+						<ul class="d-flex">
+							<li>
+								<a class="menu_link" href="#">Home</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Brows</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Create</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">MyNFT’s</a>
+							</li>
+						</ul>
+					</nav>
+
+					<button class="header_right_notif active_notif" aria-label="View notifications"><span
+							class="icon-bel"></span></button>
+
+					<div class="header_right_account d-flex align-items-center">
+						<div class="user_name">Account</div>
+						<picture class="user_photo">
+							<img src="dist/images/static/user_profil.webp" alt="User profil">
+						</picture>
+					</div>
+				</div>
+
+				<button class="header_right_menu_btn" aria-label="Open menu"><span class="icon-menu"></span></button>
+			</div>
+		</div>
+	</header>
+
+	<!-- MENU MOBILE -->
+	<div class="menu-mobile">
+		<div class="menu-close">
+			<span class="icon-close"></span>
+		</div>
+
+		<div class="menu-mobile-container">
+			<div class="menu-mobile-top">
+				<ul class="menu-list">
+					<li>
+						<a class="menu_link" href="#">Home</a>
+					</li>
+					<li>
+						<a class="menu_link" href="#">Brows</a>
+					</li>
+					<li>
+						<a class="menu_link" href="#">Create</a>
+					</li>
+					<li>
+						<a class="menu_link" href="#">MyNFT’s</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="menu-mobile-bottom d-flex">
+				<div class="user_name">Account</div>
+				<picture class="user_photo">
+					<img src="dist/images/static/user_profil.webp" alt="User profil">
+				</picture>
+			</div>
+		</div>
+	</div>
+	<!-- END MENU MOBILE -->
+
+	<main class="main">
+		<!-- Banner section -->
+		<section class="home_sect_1 banner">
 			<div class="container">
-				<div class="header_wrapper d-flex align-items-center">
-					<div class="header_left d-flex align-items-center">
-						<a href="/" class="header_left_logo d-flex" aria-label="Go to homepage">
-							<picture>
-								<img src="dist/images/nft_logo.svg" alt="Logo logoplace" />
-							</picture>
-							<span class="header_left_logo_title">NFT logoplace</span>
-						</a>
+				<div class="banner_wrapper d-flex" style="background-image: url('dist/images/static/bg_image.webp')">
+					<div class="banner_left">
+						<h1 class="title_h1">Explore Unique Digital Art and Collectibles</h1>
 
-						<div class="header_left_search">
-							<input class="search_input" type="text" name="search" id="search" placeholder="search" />
-							<span class="icon_search icon-search"></span>
+						<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi
+							ultrices sed faucibus proin cum ut. Eu dictum nisi facilisis non habitant senectus eget
+							sollicitudin.</p>
+
+						<div class="banner_left_buttons d-flex">
+							<button class="btn btn-primary btn-with-icon"><span>Discover now</span> <span
+									class="icon-arrow_right"></span></button>
+							<button class="btn btn-secondary btn-with-icon"><span class="icon-gem"></span> <span>Create
+									your own</span></button>
 						</div>
 					</div>
 
-					<div class="header_right d-flex align-items-center">
-						<nav class="header_right_menu">
-							<ul class="d-flex">
-								<li>
-									<a class="menu_link" href="#">Home</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Brows</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Create</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">MyNFT’s</a>
-								</li>
-							</ul>
-						</nav>
-
-						<button class="header_right_notif active_notif" aria-label="View notifications"><span class="icon-bel"></span></button>
-
-						<div class="header_right_account d-flex align-items-center">
-							<div class="user_name">Account</div>
-							<picture class="user_photo">
-								<img src="dist/images/static/user_profil.webp" alt="User profil" />
+					<div class="banner_right d-flex">
+						<div class="banner_right_kpi d-flex">
+							<picture class="kpi_graph">
+								<img src="dist/images/static/graph.svg" alt="graphics illustration">
 							</picture>
+
+							<strong class="kpi_title"> 160K </strong>
+							<span class="kpi_text"> Total sales </span>
+						</div>
+
+						<div class="banner_right_activeUser d-flex">
+							<div class="activeUser_images d-flex">
+								<picture>
+									<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+								</picture>
+
+								<picture>
+									<img src="dist/images/static/user_profil.webp" alt="User profil">
+								</picture>
+
+								<picture>
+									<img src="dist/images/static/user_profil_2.webp" alt="User profil">
+								</picture>
+							</div>
+
+							<div class="activeUser_details d-flex">
+								<strong class="activeUser_number"> 12k </strong>
+
+								<span class="activeUser_text"> Active users </span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Dupplication buttons -->
+				<div class="banner_left_buttons d-mobile d-flex">
+					<button class="btn btn-primary btn-with-icon"><span>Discover now</span> <span
+							class="icon-arrow_right"></span></button>
+					<button class="btn btn-secondary btn-with-icon"><span class="icon-gem"></span> <span>Create your
+							own</span></button>
+				</div>
+			</div>
+		</section>
+
+		<!-- Featured section -->
+		<section class="home_sect_2 featured">
+			<div class="container">
+				<div class="top_title d-flex">
+					<h2 class="title_h2">Featured NFTs</h2>
+
+					<div class="slick_arrow_container d-flex">
+						<button aria-label="Previous" class="slick_arrow slick_custom_prev"><span
+								class="icon-left"></span></button>
+						<button aria-label="Next" class="slick_arrow slick_custom_next"><span
+								class="icon-right"></span></button>
+
+						<a href="#" class="see_all">See All</a>
+					</div>
+				</div>
+
+				<div class="items_wrapper">
+					<div class="items_slider">
+						<!-- Item 1 -->
+
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 2 -->
+
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 3 -->
+
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 4 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 5 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 6 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="slick_dots_container"></div>
+			</div>
+		</section>
+
+		<!-- Meet Our Talented Creators -->
+		<section class="home_sect_3 meet_creators">
+			<div class="container">
+				<h2 class="title_h2">Meet Our Talented Creators</h2>
+				<div class="card_container">
+					<div class="card_wrapper d-flex">
+						<!-- Card 1 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 2 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 3 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 4 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 5 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 6 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+
+						<!-- Card 7 -->
+						<div class="card_simple pr">
+							<picture class="card_simple_img">
+								<img src="dist/images/static/user_profil.webp" alt="User profil">
+							</picture>
+
+							<div class="card_simple_details">
+								<h3 class="title_h4">sata sculpture</h3>
+
+								<span class="card_simple_name">@satasculpture</span>
+
+								<span class="card_simple_items">890 items</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Explore section -->
+		<section class="home_sect_4 explore">
+			<div class="container">
+				<h2 class="title_h2">Explore</h2>
+				<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices
+					sed faucibus proin cum ut.</p>
+
+				<div class="filter d-flex">
+					<div class="filter_left d-flex">
+						<button class="btn btn-primary filter_item">All categories</button>
+						<button class="btn btn-secondary filter_item">Art</button>
+						<button class="btn btn-secondary filter_item">Photography</button>
+						<button class="btn btn-secondary filter_item">Virtual worlds</button>
+						<button class="btn btn-secondary filter_item">Game</button>
+					</div>
+
+					<div class="filter_right">
+						<button class="btn btn-primary btn-with-icon filter_item">Filter <span
+								class="icon-sort"></span></button>
+					</div>
+				</div>
+
+				<div class="explore_wrapper">
+					<div class="explore_content d-flex">
+						<!-- Item 1 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 2 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 3 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 4 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 5 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 6 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 7 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 8 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 9 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
+						</div>
+
+						<!-- Item 10 -->
+						<div class="item_container card">
+							<div class="item_content pr">
+								<picture class="item_content_img">
+									<img src="dist/images/static/item.webp" alt="Item 1">
+								</picture>
+
+								<div class="item_content_info">
+									<h3 class="title_h3">Iron Man</h3>
+
+									<div class="item_content_user d-flex">
+										<div class="item_content_user_images d-flex">
+											<picture>
+												<img src="dist/images/static/user_profil_1.webp" alt="User profil">
+											</picture>
+
+											<picture>
+												<img src="dist/images/static/user_profil.webp" alt="User profil">
+											</picture>
+										</div>
+
+										<div class="item_content_user_details d-flex">
+											<span>@CosmicArtisan</span>
+											<span>@Sculptor</span>
+										</div>
+									</div>
+
+									<div class="item_content_action d-flex">
+										<div class="item_content_action_left d-flex">
+											<span>Current Bid :</span>
+											<span><span class="icon-triangle"></span>1.35 ETH</span>
+										</div>
+
+										<div class="item_content_action_right">
+											<button class="btn btn-primary">Place a Bid</button>
+										</div>
+									</div>
+								</div>
+
+								<button aria-label="add item to favorites" class="favorite p-abs"><span
+										class="icon-heart"></span></button>
+
+								<div class="timer p-abs">
+									<span class="icon-time"></span>
+									<span>2h:24m:04s</span>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<button class="header_right_menu_btn" aria-label="Open menu"><span class="icon-menu"></span></button>
+					<button class="btn btn-secondary btn-with-icon">Load more <span class="icon-down"></span></button>
 				</div>
 			</div>
-		</header>
+		</section>
 
-		<!-- MENU MOBILE -->
-		<div class="menu-mobile">
-			<div class="menu-close">
-				<span class="icon-close"></span>
-			</div>
-
-			<div class="menu-mobile-container">
-				<div class="menu-mobile-top">
-					<ul class="menu-list">
-						<li>
-							<a class="menu_link" href="#">Home</a>
-						</li>
-						<li>
-							<a class="menu_link" href="#">Brows</a>
-						</li>
-						<li>
-							<a class="menu_link" href="#">Create</a>
-						</li>
-						<li>
-							<a class="menu_link" href="#">MyNFT’s</a>
-						</li>
-					</ul>
-				</div>
-
-				<div class="menu-mobile-bottom d-flex">
-					<div class="user_name">Account</div>
-					<picture class="user_photo">
-						<img src="dist/images/static/user_profil.webp" alt="User profil" />
+		<!-- Community section -->
+		<section class="home_sect_5 community pr">
+			<div class="container">
+				<div class="community_wrapper d-flex">
+					<picture class="community_content_left">
+						<img src="dist/images/static/litre_girl.webp" alt="young woman smilling">
 					</picture>
+
+					<div class="community_content_right">
+						<h2 class="title_h2">Join our community</h2>
+						<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi
+							ultrices sed faucibus proin cum ut.Lorem ipsum dolor sit amet consectetur. Iaculis
+							vestibulum purus facilisi ultrices sed faucibus proin cum ut.</p>
+
+						<div class="community_buttons d-flex">
+							<input class="input_email" type="email" name="email" id="email"
+								placeholder="Enter your email adress" autocomplete="email">
+							<button class="btn btn-primary br-8 ml-10"><span>Get Email</span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- --------------------------------------------------------- -->
+	</main>
+
+	<footer class="footer pr">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_section_top d-flex">
+					<a href="/" class="footer_left_logo d-flex" aria-label="Go to homepage">
+						<picture>
+							<img src="dist/images/nft_logo.svg" alt="Logo logoplace">
+						</picture>
+						<span class="footer_left_logo_title">NFT logoplace</span>
+					</a>
+
+					<div class="footer_right_icon">
+						<ul class="d-flex footer_icons">
+							<li>
+								<a aria-label="Go to Instagram page" href="#" rel="noreferrer noopener"
+									class="icon-link"><span class="icon-instagram"></span></a>
+							</li>
+
+							<li>
+								<a aria-label="Go to Twitter page" href="#" rel="noreferrer noopener"
+									class="icon-link"><span class="icon-twitter"></span></a>
+							</li>
+
+							<li>
+								<a aria-label="Go to Linkedin page" href="#" rel="noreferrer noopener"
+									class="icon-link"><span class="icon-linkedin"></span></a>
+							</li>
+
+							<li>
+								<a aria-label="Go to Youtube page" href="#" rel="noreferrer noopener"
+									class="icon-link"><span class="icon-youtube"></span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="footer_section_bottom d-flex">
+					<div class="footer_section_bottom_left">
+						<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi
+							ultrices sed faucibus proin cum ut.</p>
+					</div>
+
+					<div class="footer_section_bottom_center">
+						<h3 class="title_h4">Explore</h3>
+
+						<ul class="d-flex footer_menu">
+							<li>
+								<a class="menu_link" href="#">Home</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Collection</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Conect a wallet</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Ranking</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer_section_bottom_right">
+						<h3 class="title_h4">Links</h3>
+						<ul class="d-flex footer_menu">
+							<li>
+								<a class="menu_link" href="#">Blog</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">Contact</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">FAQ’s</a>
+							</li>
+							<li>
+								<a class="menu_link" href="#">About us</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- END MENU MOBILE -->
+	</footer>
 
-		<main class="main">
-			<!-- Banner section -->
-			<section class="home_sect_1 banner">
-				<div class="container">
-					<div class="banner_wrapper d-flex" style="background-image: url('dist/images/static/bg_image.webp')">
-						<div class="banner_left">
-							<h1 class="title_h1">Explore Unique Digital Art and Collectibles</h1>
+	<picture class="section_background_bottom">
+		<img src="dist/images/static/illustration_2.svg" alt="illustration">
+	</picture>
+</body>
 
-							<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus proin cum ut. Eu dictum nisi facilisis non habitant senectus eget sollicitudin.</p>
+<script src="dist/js/plugins/jquery.min.js"></script>
+<script src="dist/js/common/header.min.js"></script>
+<script src="dist/js/plugins/slick.min.js"></script>
+<script src="dist/js/common/slider.min.js"></script>
 
-							<div class="banner_left_buttons d-flex">
-								<button class="btn btn-primary btn-with-icon"><span>Discover now</span> <span class="icon-arrow_right"></span></button>
-								<button class="btn btn-secondary btn-with-icon"><span class="icon-gem"></span> <span>Create your own</span></button>
-							</div>
-						</div>
-
-						<div class="banner_right d-flex">
-							<div class="banner_right_kpi d-flex">
-								<picture class="kpi_graph">
-									<img src="dist/images/static/graph.svg" alt="graphics illustration" />
-								</picture>
-
-								<strong class="kpi_title"> 160K </strong>
-								<span class="kpi_text"> Total sales </span>
-							</div>
-
-							<div class="banner_right_activeUser d-flex">
-								<div class="activeUser_images d-flex">
-									<picture>
-										<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-									</picture>
-
-									<picture>
-										<img src="dist/images/static/user_profil.webp" alt="User profil" />
-									</picture>
-
-									<picture>
-										<img src="dist/images/static/user_profil_2.webp" alt="User profil" />
-									</picture>
-								</div>
-
-								<div class="activeUser_details d-flex">
-									<strong class="activeUser_number"> 12k </strong>
-
-									<span class="activeUser_text"> Active users </span>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!-- Dupplication buttons -->
-					<div class="banner_left_buttons d-mobile d-flex">
-						<button class="btn btn-primary btn-with-icon"><span>Discover now</span> <span class="icon-arrow_right"></span></button>
-						<button class="btn btn-secondary btn-with-icon"><span class="icon-gem"></span> <span>Create your own</span></button>
-					</div>
-				</div>
-			</section>
-
-			<!-- Featured section -->
-			<section class="home_sect_2 featured">
-				<div class="container">
-					<div class="top_title d-flex">
-						<h2 class="title_h2">Featured NFTs</h2>
-
-						<div class="slick_arrow_container d-flex">
-							<button aria-label="Previous" class="slick_arrow slick_custom_prev"><span class="icon-left"></span></button>
-							<button aria-label="Next" class="slick_arrow slick_custom_next"><span class="icon-right"></span></button>
-
-							<a href="#" class="see_all">See All</a>
-						</div>
-					</div>
-
-					<div class="items_wrapper">
-						<div class="items_slider">
-							<!-- Item 1 -->
-
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 2 -->
-
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 3 -->
-
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 4 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 5 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 6 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="slick_dots_container"></div>
-				</div>
-			</section>
-
-			<!-- Meet Our Talented Creators -->
-			<section class="home_sect_3 meet_creators">
-				<div class="container">
-					<h2 class="title_h2">Meet Our Talented Creators</h2>
-					<div class="card_container">
-						<div class="card_wrapper d-flex">
-							<!-- Card 1 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 2 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 3 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 4 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 5 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 6 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-
-							<!-- Card 7 -->
-							<div class="card_simple pr">
-								<picture class="card_simple_img">
-									<img src="dist/images/static/user_profil.webp" alt="User profil" />
-								</picture>
-
-								<div class="card_simple_details">
-									<h3 class="title_h4">sata sculpture</h3>
-
-									<span class="card_simple_name">@satasculpture</span>
-
-									<span class="card_simple_items">890 items</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Explore section -->
-			<section class="home_sect_4 explore">
-				<div class="container">
-					<h2 class="title_h2">Explore</h2>
-					<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus proin cum ut.</p>
-
-					<div class="filter d-flex">
-						<div class="filter_left d-flex">
-							<button class="btn btn-primary filter_item">All categories</button>
-							<button class="btn btn-secondary filter_item">Art</button>
-							<button class="btn btn-secondary filter_item">Photography</button>
-							<button class="btn btn-secondary filter_item">Virtual worlds</button>
-							<button class="btn btn-secondary filter_item">Game</button>
-						</div>
-
-						<div class="filter_right">
-							<button class="btn btn-primary btn-with-icon filter_item">Filter <span class="icon-sort"></span></button>
-						</div>
-					</div>
-
-					<div class="explore_wrapper">
-						<div class="explore_content d-flex">
-							<!-- Item 1 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 2 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 3 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 4 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 5 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 6 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 7 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 8 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 9 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-
-							<!-- Item 10 -->
-							<div class="item_container card">
-								<div class="item_content pr">
-									<picture class="item_content_img">
-										<img src="dist/images/static/item.webp" alt="Item 1" />
-									</picture>
-
-									<div class="item_content_info">
-										<h3 class="title_h3">Iron Man</h3>
-
-										<div class="item_content_user d-flex">
-											<div class="item_content_user_images d-flex">
-												<picture>
-													<img src="dist/images/static/user_profil_1.webp" alt="User profil" />
-												</picture>
-
-												<picture>
-													<img src="dist/images/static/user_profil.webp" alt="User profil" />
-												</picture>
-											</div>
-
-											<div class="item_content_user_details d-flex">
-												<span>@CosmicArtisan</span>
-												<span>@Sculptor</span>
-											</div>
-										</div>
-
-										<div class="item_content_action d-flex">
-											<div class="item_content_action_left d-flex">
-												<span>Current Bid :</span>
-												<span><span class="icon-triangle"></span>1.35 ETH</span>
-											</div>
-
-											<div class="item_content_action_right">
-												<button class="btn btn-primary">Place a Bid</button>
-											</div>
-										</div>
-									</div>
-
-									<button aria-label="add item to favorites" class="favorite p-abs"><span class="icon-heart"></span></button>
-
-									<div class="timer p-abs">
-										<span class="icon-time"></span>
-										<span>2h:24m:04s</span>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<button class="btn btn-secondary btn-with-icon">Load more <span class="icon-down"></span></button>
-					</div>
-				</div>
-			</section>
-
-			<!-- Community section -->
-			<section class="home_sect_5 community pr">
-				<div class="container">
-					<div class="community_wrapper d-flex">
-						<picture class="community_content_left">
-							<img src="dist/images/static/litre_girl.webp" alt="young woman smilling" />
-						</picture>
-
-						<div class="community_content_right">
-							<h2 class="title_h2">Join our community</h2>
-							<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus proin cum ut.Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus proin cum ut.</p>
-
-							<div class="community_buttons d-flex">
-								<input class="input_email" type="email" name="email" id="email" placeholder="Enter your email adress" autocomplete="email" />
-								<button class="btn btn-primary br-8 ml-10"><span>Get Email</span></button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- --------------------------------------------------------- -->
-		</main>
-
-		<footer class="footer pr">
-			<div class="container">
-				<div class="footer_wrapper">
-					<div class="footer_section_top d-flex">
-						<a href="/" class="footer_left_logo d-flex" aria-label="Go to homepage">
-							<picture>
-								<img src="dist/images/nft_logo.svg" alt="Logo logoplace" />
-							</picture>
-							<span class="footer_left_logo_title">NFT logoplace</span>
-						</a>
-
-						<div class="footer_right_icon">
-							<ul class="d-flex footer_icons">
-								<li>
-									<a aria-label="Go to Instagram page" href="#" rel="noreferrer noopener" class="icon-link"><span class="icon-instagram"></span></a>
-								</li>
-
-								<li>
-									<a aria-label="Go to Twitter page" href="#" rel="noreferrer noopener" class="icon-link"><span class="icon-twitter"></span></a>
-								</li>
-
-								<li>
-									<a aria-label="Go to Linkedin page" href="#" rel="noreferrer noopener" class="icon-link"><span class="icon-linkedin"></span></a>
-								</li>
-
-								<li>
-									<a aria-label="Go to Youtube page" href="#" rel="noreferrer noopener" class="icon-link"><span class="icon-youtube"></span></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="footer_section_bottom d-flex">
-						<div class="footer_section_bottom_left">
-							<p class="paragraph">Lorem ipsum dolor sit amet consectetur. Iaculis vestibulum purus facilisi ultrices sed faucibus proin cum ut.</p>
-						</div>
-
-						<div class="footer_section_bottom_center">
-							<h3 class="title_h4">Explore</h3>
-
-							<ul class="d-flex footer_menu">
-								<li>
-									<a class="menu_link" href="#">Home</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Collection</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Conect a wallet</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Ranking</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="footer_section_bottom_right">
-							<h3 class="title_h4">Links</h3>
-							<ul class="d-flex footer_menu">
-								<li>
-									<a class="menu_link" href="#">Blog</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">Contact</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">FAQ’s</a>
-								</li>
-								<li>
-									<a class="menu_link" href="#">About us</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
-
-		<picture class="section_background_bottom">
-			<img src="dist/images/static/illustration_2.svg" alt="illustration" />
-		</picture>
-	</body>
-
-	<script src="dist/js/plugins/jquery.min.js"></script>
-	<script src="dist/js/common/header.min.js"></script>
-	<script src="dist/js/plugins/slick.min.js"></script>
-	<script src="dist/js/common/slider.min.js"></script>
 </html>
